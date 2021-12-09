@@ -16,5 +16,5 @@ Final project for 'Robotics Software Engineer' of Udacity
 #### My Own Packages
 * [pick_objects](https://github.com/gyanr0425/home-service-robot/tree/main/src/pick_objects)
   * This package commands a robot with goals of pick-up and drop-off zone. The robot go to the pick-up zone, get a virtual object, move to the drop-off zone, and drop the object.
-* [add_markers](https://github.com/prasunnyD/Home-Service-Robot/tree/master/src/add_markers)
+* [add_markers](https://github.com/gyanr0425/home-service-robot/tree/main/src/add_markers)
   * This package publishes a marker of a virtual object in Rviz, which is at the pick-up zone initially. According to the robot actions, the object disappears when the robot reaches the pick-up zone, and appears again when the robot reaches the drop-off zone.
