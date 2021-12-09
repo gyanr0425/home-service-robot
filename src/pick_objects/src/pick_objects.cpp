@@ -59,11 +59,10 @@ int main(int argc, char** argv){
     ROS_INFO("Robot failed to travel to the pickup zone.");
   }
 
-  // Wait 5 sec for move_base action server to come up
-  while(!ac.waitForServer(ros::Duration(5.0))){
-    ROS_INFO("Waiting for the move_base action server to come up");
-  }
+  // Simulate the pickup for 5 seconds
+  sleep(5);
 
+  // Set the goal pose for the drop zone
   goal.target_pose.pose.position.x = 3.5;
   goal.target_pose.pose.position.y = -0.5;
   goal.target_pose.pose.position.z = 0.0;
@@ -85,6 +84,8 @@ int main(int argc, char** argv){
   else {
     ROS_INFO("Robot failed to travel to the drop zone.");
   }
+
+  sleep(5);
 
   return 0;
 }
